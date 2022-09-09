@@ -1,3 +1,10 @@
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Combo', cursive;
+}
+p{
+    font-family: 'Combo', cursive;
+    font-family: 'Raleway', sans-serif;
+}
 .Menu{
     width: 100%;
     height: 100px;
@@ -50,7 +57,7 @@
     justify-content: center;
 }
 .Principal .Con-texto{
-    width: 200px;
+    width: 380px;
     height: 200px;
     text-align: center;
 }
@@ -60,13 +67,87 @@
 }
 .Principal .Con-texto p{
     font-size: 20px;
-    color: rgb(255, 102, 0);
+    color: rgb(0, 0, 0);
 }
 .Principal .Con-texto a{
     font-size: 20px;
     color: rgb(218, 133, 100);
     background-color: rgb(255, 195, 195);
     padding: 7px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+/* sesion descuentos */
+.descuentos{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.descuentos .imagenes-des img{
+    width: 300px;
+    height: 300px;
+}
+.imagenes-des{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.titulo h2,
+.productos .titulo-pro{
+    font-size: 50px;
+    color:  rgb(255, 47, 47);
+    font-weight: bold;
+}
+/* sesion productos */
+.productos{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.con-productos{
+    width: 100%;
+    height: auto;
+}
+.con-productos .tarjeta-pro{
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+}
+.tarjeta-pro img{
+    height: auto;
+}
+.tarjeta-pro .contenido{
+    width: 100%;
+    height: auto;
+}
+.tarjeta-pro .contenido h3{
+    color:  rgb(255, 47, 47);
+    font-size: 35px;
+    font-weight: bold;
+}
+.tarjeta-pro .contenido p{
+    font-size: 20px;
+}
+.tarjeta-pro .botones{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.tarjeta-pro .botones p{
+    font-weight: bold;
+    color: black;
+}
+.tarjeta-pro .botones a{
+    background-color: red;
+    color: white;
+    padding: 7px 12px;
     border-radius: 10px;
     text-decoration: none;
 }
