@@ -49,7 +49,7 @@ p{
 .Principal{
     width: 100%;
     height: 500px;
-    background-image: url(../imagenes/ppal\ 2.jpg);
+    background-image: url(../imagenes/fondoppal.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
@@ -95,35 +95,43 @@ p{
     justify-content: space-between;
 }
 .titulo h2,
-.productos .titulo-pro{
+.productos .titulo-pro,
+.servicios .titulo-ser{
     font-size: 50px;
     color:  rgb(255, 47, 47);
     font-weight: bold;
 }
 /* sesion productos */
-.productos{
+.productos,
+.servicios{
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.con-productos{
+.con-productos,
+.con-servicios{
     width: 100%;
     height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .con-productos .tarjeta-pro{
     width: 400px;
-    height: 500px;
+    height: auto;
     border-radius: 10px;
     border: 1px solid rgb(0, 0, 0);
 }
 .tarjeta-pro img{
-    height: 200px;
+    width: 100%;
+    height: auto;
 }
 .tarjeta-pro .contenido{
     width: 100%;
     height: auto;
+    text-align: center;
 }
 .tarjeta-pro .contenido h3{
     color:  rgb(255, 47, 47);
@@ -150,4 +158,51 @@ p{
     padding: 7px 12px;
     border-radius: 10px;
     text-decoration: none;
+}
+/* sesion productos */
+.servicios{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: auto;
+}
+.servicios .servicio-1,
+.servicios .servicio-2{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.servicio-1 img,
+.servicio-2 img,
+.servicio-1 .con-texto,
+.servicio-2 .con-texto{
+    width: 50%;
+    height: auto;
+}
+.servicio-1 .con-texto h3,
+.servicio-2 .con-texto h3{
+    font-size: 45px;
+    color: rgb(255, 195, 195);
+    font-weight: bold;
+}
+.servicio-1 .con-texto p,
+.servicio-2 .con-texto p{
+    font-size: 20px;
+    color: grey;
+    font-weight: bold;
+}
+.servicio-1 .con-texto a,
+.servicio-2 .con-texto a{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    background-color: red;
+    padding: 8px 12px;
+    border-radius: 10px;
+}
+.servicio-1 .con-texto a:hover,
+.servicio-2 .con-texto a:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 195, 195);
+    border: 2px solid rgb(0, 0, 0);
 }
